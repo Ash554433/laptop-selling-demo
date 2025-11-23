@@ -1,0 +1,301 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.grid-product {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.grid-laptop-card {
+  cursor: pointer;
+  height: 200px;
+  background-color: white;
+
+}
+
+.grand-banner {
+  height: 100px;
+}
+
+.navigation-bar {
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  justify-content:space-between;
+  padding: 0px 20px;
+  align-items: center;
+  background-color: rgb(20, 156, 201);
+}
+.logo {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-bar-container {
+  display: flex;
+  width: 320px;
+  align-items: center;
+  border: 1px solid rgb(96, 96, 96);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.search-bar {
+  flex-grow: 1;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+.search-button {
+  background-color: rgb(227, 227, 227);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px;
+}
+
+.search-button:hover {
+  background-color: rgb(139, 139, 139);
+}
+
+.navigation-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.hot-line {
+  font-size: 24px;
+  color: white;
+  font-style: bold;
+  margin: 0 8px 0 0;
+}
+
+.login-button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+  margin: 0 8px 0 0;
+}
+
+.cart-button {
+  font-size: 24px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+.filter-bar {
+  height: 70px;
+}
+
+.product-area {
+  display: flex;
+  width: 100%;
+  margin: 16px 0 0 0;
+  
+}
+
+.left-menu {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  min-height: 480px;
+  padding: 16px;
+  border-right: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+
+.left-menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+
+.menu-label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.left-menu-options {
+
+  padding: 8px;
+  font-size: 24px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.left-menu-options:hover {
+  background-color: lightblue;
+}
+
+.product-showcasing {
+  width: 100%;
+  min-height: 480px;
+  padding: 0 8px 0 8px;
+}
+
+
+.filter-bar {
+  padding: 16px;
+  border: 1px solid lightgrey;
+}
+
+.filter-label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.filter-option-container {
+  padding: 16px 0 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.filter-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.filter-dropdown-button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.laptop-grid-container {
+  padding: 16px 8px 0 8px;
+}
+
+
+
+.laptop-card {
+  width: 240px;
+  height: 430px;
+  
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  border: 1px solid lightgrey;
+
+  margin-right: 8px;
+}
+
+.laptop-card-img-container:hover {
+  cursor: pointer;
+}
+.laptop-card-img {
+  width: 240px;
+  height: 240px;
+}
+
+.laptop-card-specs {
+  padding: 8px;
+  background-color: lightgray;
+  font-size: 12px;
+  margin: 8px 0 8px 0;
+}
+
+.laptop-card-features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.compare-button,
+.add-to-cart-button {
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.compare-button:hover,
+.add-to-cart-button:hover {
+  background-color: lightblue;
+}
+
+
+.footer-a {
+  font-size: 20px;
+  padding: 24px 48px 0 48px;
+  margin-top: 48px;
+}
+
+
+.footer-info-top {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px 16px 0;
+}
+
+.footer-info-topic {
+  border-left: 1px solid lightblue;
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+  font-size: 16px;
+}
+
+.footer-info-link {
+  cursor: pointer;
+  margin-top: 5px;
+}
+.footer-info-link:hover {
+  text-decoration: underline;
+}
+
+.footer-info-bottom {
+  font-size: 16px;
+  color: gray;
+  background-color: lightgrey;
+  padding: 8px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+}
+
+.show {
+  display: block;
+}

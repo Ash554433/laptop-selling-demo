@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AnhPhat Lap</title>
+  <link rel="stylesheet" href="style/home.css">
+</head>
+
+<body>
+  <!--This is the grand banner-->
+  <div style="background-color: rgb(109, 209, 227);"
+    class="grand-banner">
+    <p style="font-size: 32px; color: white;">Bảng quảng cáo chính</p>
+  </div>
+
+  <!--This is navigation bar-->
+  <div class="navigation-bar">
+    <div>
+      <p class="logo">AnhPhat Lap</p>
+    </div>
+
+    <div class="search-bar-container">
+      <input type="text" class="search-bar" placeholder="Tìm sản phẩm...">
+      <button class="search-button">Tìm kiếm</button>
+    </div>
+
+    <div class="navigation-bar-right">
+      <div>
+        <p class="hot-line">SDT: 000000</p>
+      </div>
+      <button class="login-button">Đăng nhập</button>
+      <button class="cart-button">Giỏ hàng(0)</button>
+    </div>
+  </div>
+
+  <!--This is area for product listing-->
+  <div class="product-area">
+
+    <!--This is a left menu for product listing-->
+    <div class="left-menu">
+      <div class="left-menu-header">
+        <p></p>
+        <p class="menu-label">Menu</p>
+      </div>
+      <button class="left-menu-options">Laptop đồ họa</button>
+      <button class="left-menu-options">Laptop sinh viên</button>
+      <button class="left-menu-options">Laptop gaming</button>
+      <button class="left-menu-options">Laptop văn phòng</button>
+      <button class="left-menu-options">...</button>
+    </div>
+
+    <!--This is filtering and showcasing product area-->
+    <div class="product-showcasing">
+       <!--This is filter bar-->
+      <div class="filter-bar">
+        <div>
+          <p class="filter-label">Phân loại:</p>
+        </div>
+
+        <div class="filter-option-container">
+
+          <div style="display: flex; align-items: center;">
+              <p style="font-size: 20px; margin-right: 4px; padding: 8px 0 8px 0;">Hãng: </p>
+      
+            <div class="dropdown">
+              <button class="filter-button dropdown-button">Hãng</button>
+              <div class="dropdown-content">
+                <div style="display: flex; flex-direction: column; font-size: 16px;">
+                  <button class="filter-dropdown-button"
+                  data-value="All">Tất cả</button>
+                  <button class="filter-dropdown-button" data-value="MSI">MSI</button>
+                  <button class="filter-dropdown-button" data-value="Lenovo">Lenovo</button>
+                  <button class="filter-dropdown-button" data-value="ROG">ROG</button>
+                  <button class="filter-dropdown-button" data-value="Dell">Dell</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+         
+          
+          <button class="filter-button">Giá cả</button>
+          <button class="filter-button">CPU</button>
+          <button class="filter-button">GPU</button>
+          <button class="filter-button">RAM</button>
+          <button class="filter-button">Màn hình</button>
+        </div>
+      </div>
+
+      <!--This is product grid-->
+      <div class="laptop-grid-container">
+        <div class="grid-product">
+        </div>
+      </div>
+    </div>
+   
+
+
+
+  </div>
+  </div>
+
+
+  <!--Footer-->
+  <div class="footer-a">
+
+    <!--Some footer links-->
+    <div class="footer-info-top">
+      <div class="footer-info-topic">
+        <p>THÔNG TIN CHUNG</p>
+        <a class="footer-info-link">Giới thiệu về AnhPhat Lap</a>
+        <a class="footer-info-link">Tin tức</a>
+        <a class="footer-info-link">Tuyển dụng</a>
+        <a class="footer-info-link">Liên hệ - góp ý</a>
+      </div>
+      <div class="footer-info-topic">
+        <p>HỖ TRỢ KHÁCH HÀNG</p>
+        <a class="footer-info-link">Hướng dẫn mua trực tuyến</a>
+        <a class="footer-info-link">Hướng dẫn thanh toán</a>
+        <a class="footer-info-link">Hướng dẫn mua trả góp</a>
+        <a class="footer-info-link">Tra cứu bảo hành</a>
+      </div>
+      <div class="footer-info-topic">
+        <p>CHÍNH SÁCH CHUNG</p>
+        <a class="footer-info-link">Chính sách vận chuyển</a>
+        <a class="footer-info-link">Chính sách bảo hành</a>
+        <a class="footer-info-link">Chính cách kiểm hàng</a>
+        <a class="footer-info-link">Bảo mật thông tin khách hàng</a>
+      </div>
+      <div class="footer-info-topic">
+        <p>TỔNG ĐÀI HỖ TRỢ</p>
+        <a class="footer-info-link">Hỗ trợ khách hàng: 000000</a>
+        <a class="footer-info-link">Kỹ thuật - bảo hành: 000000</a>
+        <a class="footer-info-link">Email: anhphatlap@computer.com.vn</a>
+        <a class="footer-info-link">Góp ý - khiếu nại: 000000</a>
+      </div>
+    </div>
+    
+    <div class="footer-info-bottom">
+      <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI MÁY TÍNH AnhPhatLap</p>
+      <p>Giấy chứng nhận DKDN số 121212121221 cấp ngày 13/13/1313</p>
+      <p>Trụ sở: Tầng 13 số 50, Thành phố Ninh Bình, Viet Nam</p>
+      <p>Điện thoại: 000000000. Email: anhphatlap@computer.com.vn</p>
+    </div>
+
+  </div>
+
+  <script src="script/home.js"></script>
+  
+</body>
+
+</html>
