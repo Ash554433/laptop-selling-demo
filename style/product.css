@@ -47,6 +47,10 @@
   align-items: center;
 }
 
+.laptop-detail-right {
+  max-width: 760px;
+}
+
 .laptop-img {
   border: 1px solid lightpink;
   width: 480px;
@@ -87,4 +91,8 @@
 .compare-button:hover,
 .add-to-cart-button:hover {
   background-color: rgb(7, 159, 209);;
+}
+
+.laptop-img {
+  object-fit: cover;
 }

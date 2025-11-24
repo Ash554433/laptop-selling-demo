@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, ol, li, blockquote {
   font-size: inherit;
   font-weight: normal;
@@ -50,7 +54,7 @@ a {
   align-items: center;
   background-color: rgb(20, 156, 201);
 }
-.logo {
+.shop-logo {
   font-size: 48px;
   color: white;
   font-weight: bold;
@@ -221,10 +225,13 @@ a {
   width: 240px;
   height: 240px;
 }
+.laptop-card-info {
+  font-size: 16px;
+}
 
 .laptop-card-specs {
   padding: 8px;
-  background-color: lightgray;
+  background-color: rgb(240, 240, 240);
   font-size: 12px;
   margin: 8px 0 8px 0;
 }
@@ -236,15 +243,17 @@ a {
 
 .compare-button,
 .add-to-cart-button {
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
-  background-color: white;
+  background-color: rgb(203, 242, 255);
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .compare-button:hover,
 .add-to-cart-button:hover {
-  background-color: lightblue;
+  background-color: rgb(93, 194, 227);
 }
 
 
@@ -298,4 +307,52 @@ a {
 
 .show {
   display: block;
+}
+
+
+.login-overlay {
+  position :fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  visibility: hidden;
+  font-size: 24px;
+
+}
+
+.login-overlay.show {
+  visibility: visible;
+}
+
+.login-modal {
+  background: white;
+  padding: 16px;
+  border-radius: 16px;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 8px 16px rbga(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.exit-login-button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20%;
+}
+
+.exit-login-button:hover {
+  background-color: lightcoral;
+  color: gray;
 }

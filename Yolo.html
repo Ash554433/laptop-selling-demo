@@ -7,6 +7,34 @@
 </head>
 
 <body>
+
+  <!--overlay for login-->
+  <div class="login-overlay">
+    <div class="login-modal">
+      <div style="display: flex; flex-direction: column; margin-top: 24px;">
+        <div style="display: flex; margin-bottom: 8px; align-items: center;">
+          <p>Tài khoản</p>
+          <input type="text" placeholder="Nhập tài khoản..."
+          style="font-size: 20px; margin-left: 12px;">
+        </div>
+        <div style="display: flex; margin-bottom: 16px; align-items: center;">
+          <p>Mật khẩu</p>
+          <input type="text" placeholder="Nhập mật khẩu..."
+          style="font-size: 20px; margin-left: 19px; ">
+        </div>
+        
+        <div style="display: flex;">
+          <button style="font-size: 16px; margin-right: 64px; width: 128px;
+          margin-left: 32px; padding: 8px 0;">Đăng nhập</button>
+          <button style="font-size: 16px; width:128px;">Đăng ký</button>
+        </div>
+        
+      </div>
+      
+      <a style="font-size: 16px; cursor: pointer; text-decoration: underline;">Quên mật khẩu?</a>
+      <button class="exit-login-button">X</button>
+    </div>
+  </div>
   <!--This is the grand banner-->
   <div style="background-color: rgb(109, 209, 227);"
     class="grand-banner">
@@ -16,7 +44,7 @@
   <!--This is navigation bar-->
   <div class="navigation-bar">
     <div>
-      <p class="logo">AnhPhat Lap</p>
+      <p class="shop-logo">AnhPhat Lap</p>
     </div>
 
     <div class="search-bar-container">
