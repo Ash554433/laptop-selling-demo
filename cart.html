@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gio hang</title>
+    <meta charset="UTF-8">
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/cart.css">
+  </head>
+
+  <body>
+    <!--Grand banner-->
+    <div style="background-color: rgb(109, 209, 227);display: flex; justify-content: center; align-items: center;"
+      class="grand-banner">
+      <p style="font-size: 32px; color: white;">Bảng quảng cáo chính</p>
+    </div>
+    <!--This is navigation bar-->
+    <div class="navigation-bar">
+      <div>
+        <p class="shop-logo">AnhPhat Lap</p>
+      </div>
+
+      <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Tìm sản phẩm...">
+        <button class="search-button">Tìm kiếm</button>
+      </div>
+
+      <div class="navigation-bar-right">
+        <div>
+          <p class="hot-line" style="margin-right: 24px;">SĐT: 000000</p>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <img src="img/login-icon.png" style="width:24px;height:24px;margin-right: 4px;">
+          <button class="login-button">Đăng nhập</button>
+        </div>
+        
+        <button class="cart-button">Giỏ hàng(0)</button>
+      </div>
+    </div>
+
+    <div class="cart-area">
+
+      <div class="cart-area-left">
+        <div>
+          <p class="laptop-list-label">Danh mục sản phẩm</p>
+        </div>
+
+        <div class="laptop-list-container">
+        </div>
+
+      </div>
+
+      <div class="cart-area-right">
+
+        <div>
+          <p class="summary-label">Thành giá</p>
+        </div>
+
+        <div class="summary-list">
+
+        </div>
+
+        <div class="summary-util-button">
+          <button class="util-button back-to-shopping">Tiếp tục mua sắm</button>
+          <button class="util-button checkout-button">Đặt hàng</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!--Footer-->
+    <div class="footer-a">
+
+      <!--Some footer links-->
+      <div class="footer-info-top">
+        <div class="footer-info-topic">
+          <p>THÔNG TIN CHUNG</p>
+          <a class="footer-info-link">Giới thiệu về AnhPhat Lap</a>
+          <a class="footer-info-link">Tin tức</a>
+          <a class="footer-info-link">Tuyển dụng</a>
+          <a class="footer-info-link">Liên hệ - góp ý</a>
+        </div>
+        <div class="footer-info-topic">
+          <p>HỖ TRỢ KHÁCH HÀNG</p>
+          <a class="footer-info-link">Hướng dẫn mua trực tuyến</a>
+          <a class="footer-info-link">Hướng dẫn thanh toán</a>
+          <a class="footer-info-link">Hướng dẫn mua trả góp</a>
+          <a class="footer-info-link">Tra cứu bảo hành</a>
+        </div>
+        <div class="footer-info-topic">
+          <p>CHÍNH SÁCH CHUNG</p>
+          <a class="footer-info-link">Chính sách vận chuyển</a>
+          <a class="footer-info-link">Chính sách bảo hành</a>
+          <a class="footer-info-link">Chính cách kiểm hàng</a>
+          <a class="footer-info-link">Bảo mật thông tin khách hàng</a>
+        </div>
+        <div class="footer-info-topic">
+          <p>TỔNG ĐÀI HỖ TRỢ</p>
+          <a class="footer-info-link">Hỗ trợ khách hàng: 000000</a>
+          <a class="footer-info-link">Kỹ thuật - bảo hành: 000000</a>
+          <a class="footer-info-link">Email: anhphatlap@computer.com.vn</a>
+          <a class="footer-info-link">Góp ý - khiếu nại: 000000</a>
+        </div>
+      </div>
+      
+      <div class="footer-info-bottom">
+        <p>CÔNG TY CỔ PHẦN THƯƠNG MẠI MÁY TÍNH AnhPhatLap</p>
+        <p>Giấy chứng nhận DKDN số 121212121221 cấp ngày 13/13/1313</p>
+        <p>Trụ sở: Tầng 13 số 50, Thành phố Ninh Bình, Viet Nam</p>
+        <p>Điện thoại: 000000000. Email: anhphatlap@computer.com.vn</p>
+      </div>
+
+    </div>
+
+  
+
+    <script>
+
+   
+    const laptops = [
+      { id: 1, name: "Dell XPS 13 (2024)", brand: "Dell", price: 12000000, cpu: "i7", gpu: "Integrated" },
+      { id: 2, name: "MacBook Air M3", brand: "Apple", price: 13000000, cpu: "M3", gpu: "Integrated"},
+      { id: 3, name: "HP Spectre x360", brand: "HP", price: 12000000, cpu: "i7", gpu: "Integrated"},
+      { id: 4, name: "Lenovo Legion 5", brand: "Lenovo", price: 12000000, cpu: "i5", gpu: "RTX 4060"},
+      { id: 5, name: "Asus ROG Zephyrus G16", brand: "Asus", price: 30000000, cpu: "R9", gpu: "RTX 4080"},
+      { id: 6, name: "Dell G15 Gaming", brand: "Dell", price: 30000000, cpu: "i5", gpu: "RTX 3050"},
+      { id: 7, name: "Apple MacBook Pro 14", brand: "Apple", price: 13000000, cpu: "M3 Pro", gpu: "M3 Pro"},
+      { id: 8, name: "Lenovo ThinkPad X1", brand: "Lenovo", price: 13000000, cpu: "i7", gpu: "Integrated"},
+      { id: 9, name: "MSI Raider GE78", brand: "MSI", price: 30000000, cpu: "i9", gpu: "RTX 4090"},
+      { id: 10, name: "Acer Swift 5", brand: "Acer", price: 30000000, cpu: "i5", gpu: "Integrated"},
+      { id: 11, name: "Microsoft Surface Laptop 5", brand: "Microsoft", price: 27900000, cpu: "i7", gpu: "Integrated"},
+      { id: 12, name: "Razer Blade 16", brand: "Razer", price: 13000000, cpu: "i9", gpu: "RTX 4070"},
+      { id: 13, name: "LG Gram 17", brand: "LG", price: 27900000, cpu: "i5", gpu: "Integrated"},
+      { id: 14, name: "Samsung Galaxy Book 4 Ultra", brand: "Samsung", price: 13000000, cpu: "i9"},
+      { id: 15, name: "Asus ZenBook Duo", brand: "Asus", price: 13000000, cpu: "i7", gpu: "Integrated"},
+      { id: 16, name: "Dell Precision 7780", brand: "Dell", price: 30000000, cpu: "i9", gpu: "RTX 5000"},
+      { id: 17, name: "HP Omen 16", brand: "HP", price: 27900000, cpu: "R7", gpu: "RTX 4060"},
+      { id: 18, name: "Lenovo IdeaPad Flex 5", brand: "Lenovo", price: 13000000, cpu: "R5", gpu: "Integrated"},
+      { id: 19, name: "Apple MacBook Air M2 15\"", brand: "Apple", price: 27900000, cpu: "M2", gpu: "Integrated"},
+      { id: 20, name: "MSI Stealth 18", brand: "MSI", price: 13000000, cpu: "i7", gpu: "RTX 4080"},
+      { id: 21, name: "Acer Predator Helios 300", brand: "Acer", price: 13000000, cpu: "i7", gpu: "RTX 4070" },
+      { id: 22, name: "Microsoft Surface Pro 9", brand: "Microsoft", price: 30000000, cpu: "i5", gpu: "Integrated"},
+      { id: 23, name: "Razer Blade 14", brand: "Razer", price: 27900000, cpu: "R9", gpu: "RTX 4060"},
+      { id: 24, name: "LG Ultra PC", brand: "LG", price: 27900000, cpu: "R7", gpu: "Integrated"},
+      { id: 25, name: "Samsung Galaxy Book 3 360", brand: "Samsung", price: 27900000, cpu: "i7", gpu: "Integrated"},
+      { id: 26, name: "Asus Vivobook 15", brand: "Asus", price: 27900000, cpu: "i5", gpu: "Integrated"},
+      { id: 27, name: "Dell Latitude 5400", brand: "Dell", price: 30000000, cpu: "i5", gpu: "Integrated"},
+      { id: 28, name: "HP Pavilion Aero 13", brand: "HP", price: 27900000, cpu: "R7", gpu: "Integrated"},
+      { id: 29, name: "Lenovo ThinkBook 14", brand: "Lenovo", price: 27900000, cpu: "i7", gpu: "Integrated"},
+    ];
+      // interaction for shop logo
+      document.querySelector('.shop-logo').addEventListener('click', () => {
+        window.location.href = 'Yolo.html';
+      });
+
+      // interaction for back to shopping button
+      document.querySelector('.back-to-shopping').addEventListener('click', () => {
+        window.location.href = 'Yolo.html';
+      });
+
+      // cart action
+
+      // find laptop in db by id
+      function findLaptopDB(id) {
+        let matchedLaptop;
+
+        laptops.forEach(laptop => {
+          if (laptop.id === Number(id)) {
+            console.log('catch');
+            matchedLaptop = laptop;
+          }
+        });
+        return matchedLaptop;
+      }
+
+      // get cart from localStorage
+      let cart = JSON.parse(localStorage.getItem("cart"));
+      if (!cart) {
+        cart = {};
+      }
+      console.log(cart);
+   
+      // quantity of items in cart 
+      function cartQuantity() {
+        let sum = 0;
+        Object.entries(cart).forEach(([key, value]) => {
+          sum += value;
+        });
+        return sum;
+      }
+      // show cart items on screen
+      function showCartItems() {
+        let laptopListHTML = ``;
+
+        if (cartQuantity() === 0) {
+          const laptopListContainer = document.querySelector('.laptop-list-container');
+          laptopListContainer.innerHTML = laptopListHTML;
+
+        } else {
+     
+          Object.entries(cart).forEach(([key, value]) => {
+          const laptop = findLaptopDB(key);
+
+          laptopListHTML += `
+              <div class="laptop-container">
+                <div class="laptop-img-container">
+                  <img src="${randomImg()}" class="laptop-img">
+                </div>
+                <div class="laptop-detail">
+                  <p onclick="moveToDetail(${key})" style="font-size: 24px; margin-bottom: 8px; color: blue;
+                  cursor: pointer;">${laptop.name}</p>
+                  <P>CPU: ${laptop.cpu}. GPU: ${laptop.gpu}.</P>
+                  <div class="quantity-control">
+                    <p>Số lượng: </p>
+                    <button class="reduce-quantity-button" data-id="${key}">-</button>
+                    <p class="quantity-number" id="item${key}">${value}</p>
+                    <button class="increase-quantity-button" data-id=${key}>+</button>
+                  </div>
+                  
+                </div>
+
+                <div class="semi-summary">
+                  <p style="font-size: 20px; margin-bottom: 8px;">Đơn giá:</p>
+                  <p style="font-size: 18px; margin-bottom: 8px; color: red">${priceFormat(laptop.price)} VNĐ</p>
+                  <p style="font-size: 20px;">Tổng:</p>
+                  <p id="semi-price-${key}" style="font-size: 18px; margin-top: 8px; color: rgb(230, 57, 70)">${priceFormat(laptop.price * value)} VNĐ</p>
+                </div>
+            </div>
+          `;
+         });
+  
+          const laptopListContainer = document.querySelector('.laptop-list-container');
+          laptopListContainer.innerHTML = laptopListHTML;
+          changeQuantityButtonEnable();
+        }
+      }
+
+      showCartItems();
+
+
+      // interaction with increase and reduce quantity button
+      function changeQuantityButtonEnable() {
+        // interaction with increase quantity button 
+        const incQuantityButtonArray = document.querySelectorAll('.increase-quantity-button');
+        incQuantityButtonArray.forEach(incButton => {
+          incButton.addEventListener('click', () => {
+            itemId = incButton.dataset.id;
+            cart[itemId] += 1;
+            const semiPriceEle = document.querySelector(`#semi-price-${itemId}`);
+            const laptop = findLaptopDB(itemId);
+            semiPriceEle.innerText = `${priceFormat(laptop.price * cart[itemId])} VNĐ`;
+            document.querySelector(`#item${itemId}`).innerText = cart[itemId];
+            saveToLocal();
+            updateSummaryList();
+            console.log('something went up!');
+        })});
+
+        // interaction with reduce quantity button 
+        const redQuantityButtonArray = document.querySelectorAll('.reduce-quantity-button');
+        redQuantityButtonArray.forEach(redButton => {
+          redButton.addEventListener('click', () => {
+            console.log(cart);
+            itemId = redButton.dataset.id;
+            if (cart[itemId] === 1) {
+              delete cart[itemId];
+              console.log('Remove one!');
+              saveToLocal();
+              showCartItems();
+              updateSummaryList();
+            } else {
+              cart[itemId] -= 1;
+              document.querySelector(`#item${itemId}`).innerText = cart[itemId];
+              const semiPriceEle = document.querySelector(`#semi-price-${itemId}`);
+              const laptop = findLaptopDB(itemId);
+              semiPriceEle.innerText = `${priceFormat(laptop.price * cart[itemId])} VNĐ`;
+              document.querySelector(`#item${itemId}`).innerText = cart[itemId];
+              saveToLocal();
+              updateSummaryList();
+              console.log('something goes down!');
+            }
+            
+        })});
+      }
+
+      // save cart object to localStorage
+      function saveToLocal() {
+          console.log(cart);
+          localStorage.setItem("cart", JSON.stringify(cart));
+      }
+
+
+
+
+      // get a random image 
+      function randomImg() {
+        const num = Math.floor(Math.random() * 7) + 1;
+        return `img/laptop${num}.jpg`;
+      }
+
+      // price format 
+      function priceFormat(price) {
+        let priceStr = price.toString();
+
+        const left = priceStr.slice(0, priceStr.length-6);
+
+        const temp = priceStr.slice(-6);
+
+        const middle = temp.slice(0, 3);
+        const right = temp.slice(-3);
+
+        console.log(left, right);
+        priceStr = left + '.' + middle + '.' + right;
+        return priceStr;
+      }
+
+      // update summary-list
+      function updateSummaryList() {
+        let summaryListHTML = '';
+        let grandPrice = 0;
+        Object.entries(cart).forEach(([key, value]) => {
+          const laptop = findLaptopDB(key);
+          grandPrice += laptop.price * value;
+          const temp = `
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+              <p style="font-size: 20px;">${laptop.name}</p>
+              <p>x${value}</p>
+            </div>
+          `;
+          summaryListHTML += temp;
+        });
+        console.log(grandPrice);
+        summaryListHTML += `
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%">
+          <p style="font-size: 18px;">Tổng:</p>
+          <p style="font-size: 24px; color: rgb(230, 57, 70);">${priceFormat(grandPrice)} VNĐ</p>
+        </div>
+        `;
+        const summaryListEle = document.querySelector('.summary-list');
+        summaryListEle.innerHTML = summaryListHTML;
+      }
+
+      updateSummaryList();
+
+      // move to detail page when clicking on the laptop's name
+      function moveToDetail(id) {
+        window.location.href = `product.html?id=${id}`;
+      }
+    </script>
+  </body>
+</html>

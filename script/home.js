@@ -1,35 +1,34 @@
-  // laptop db
+// laptop db
 const laptops = [
-  // Initial 29 Laptops
-  { id: 1, name: "Dell XPS 13 (2024)", brand: "Dell", price: 1299, cpu: "i7", gpu: "Integrated"},
-  { id: 2, name: "MacBook Air M3", brand: "Apple", price: 1099, cpu: "M3", gpu: "Integrated"},
-  { id: 3, name: "HP Spectre x360", brand: "HP", price: 1499, cpu: "i7", gpu: "Integrated"},
-  { id: 4, name: "Lenovo Legion 5", brand: "Lenovo", price: 1199, cpu: "i5", gpu: "RTX 4060"},
-  { id: 5, name: "Asus ROG Zephyrus G16", brand: "Asus", price: 1999, cpu: "R9", gpu: "RTX 4080"},
-  { id: 6, name: "Dell G15 Gaming", brand: "Dell", price: 950, cpu: "i5", gpu: "RTX 3050"},
-  { id: 7, name: "Apple MacBook Pro 14", brand: "Apple", price: 2199, cpu: "M3 Pro", gpu: "M3 Pro"},
-  { id: 8, name: "Lenovo ThinkPad X1", brand: "Lenovo", price: 1550, cpu: "i7", gpu: "Integrated"},
-  { id: 9, name: "MSI Raider GE78", brand: "MSI", price: 2499, cpu: "i9", gpu: "RTX 4090"},
-  { id: 10, name: "Acer Swift 5", brand: "Acer", price: 850, cpu: "i5", gpu: "Integrated"},
-  { id: 11, name: "Microsoft Surface Laptop 5", brand: "Microsoft", price: 1350, cpu: "i7", gpu: "Integrated"},
-  { id: 12, name: "Razer Blade 16", brand: "Razer", price: 2899, cpu: "i9", gpu: "RTX 4070"},
-  { id: 13, name: "LG Gram 17", brand: "LG", price: 1100, cpu: "i5", gpu: "Integrated"},
-  { id: 14, name: "Samsung Galaxy Book 4 Ultra", brand: "Samsung", price: 2300, cpu: "i9", gpu: "RTX 4070"},
-  { id: 15, name: "Asus ZenBook Duo", brand: "Asus", price: 1700, cpu: "i7", gpu: "Integrated"},
-  { id: 16, name: "Dell Precision 7780", brand: "Dell", price: 3500, cpu: "i9", gpu: "RTX 5000"},
-  { id: 17, name: "HP Omen 16", brand: "HP", price: 1600, cpu: "R7", gpu: "RTX 4060"},
-  { id: 18, name: "Lenovo IdeaPad Flex 5", brand: "Lenovo", price: 799, cpu: "R5", gpu: "Integrated"},
-  { id: 19, name: "Apple MacBook Air M2 15\"", brand: "Apple", price: 1199, cpu: "M2", gpu: "Integrated"},
-  { id: 20, name: "MSI Stealth 18", brand: "MSI", price: 2200, cpu: "i7", gpu: "RTX 4080"},
-  { id: 21, name: "Acer Predator Helios 300", brand: "Acer", price: 1800, cpu: "i7", gpu: "RTX 4070"},
-  { id: 22, name: "Microsoft Surface Pro 9", brand: "Microsoft", price: 1050, cpu: "i5", gpu: "Integrated"},
-  { id: 23, name: "Razer Blade 14", brand: "Razer", price: 1999, cpu: "R9", gpu: "RTX 4060"},
-  { id: 24, name: "LG Ultra PC", brand: "LG", price: 900, cpu: "R7", gpu: "Integrated"},
-  { id: 25, name: "Samsung Galaxy Book 3 360", brand: "Samsung", price: 1450, cpu: "i7", gpu: "Integrated"},
-  { id: 26, name: "Asus Vivobook 15", brand: "Asus", price: 650, cpu: "i5", gpu: "Integrated"},
-  { id: 27, name: "Dell Latitude 5400", brand: "Dell", price: 980, cpu: "i5", gpu: "Integrated"},
-  { id: 28, name: "HP Pavilion Aero 13", brand: "HP", price: 999, cpu: "R7", gpu: "Integrated"},
-  { id: 29, name: "Lenovo ThinkBook 14", brand: "Lenovo", price: 1150, cpu: "i7", gpu: "Integrated"},
+  { id: 1, name: "Dell XPS 13 (2024)", brand: "Dell", price: 12000000, cpu: "i7", gpu: "Integrated" },
+  { id: 2, name: "MacBook Air M3", brand: "Apple", price: 13000000, cpu: "M3", gpu: "Integrated"},
+  { id: 3, name: "HP Spectre x360", brand: "HP", price: 12000000, cpu: "i7", gpu: "Integrated"},
+  { id: 4, name: "Lenovo Legion 5", brand: "Lenovo", price: 12000000, cpu: "i5", gpu: "RTX 4060"},
+  { id: 5, name: "Asus ROG Zephyrus G16", brand: "Asus", price: 30000000, cpu: "R9", gpu: "RTX 4080"},
+  { id: 6, name: "Dell G15 Gaming", brand: "Dell", price: 30000000, cpu: "i5", gpu: "RTX 3050"},
+  { id: 7, name: "Apple MacBook Pro 14", brand: "Apple", price: 13000000, cpu: "M3 Pro", gpu: "M3 Pro"},
+  { id: 8, name: "Lenovo ThinkPad X1", brand: "Lenovo", price: 13000000, cpu: "i7", gpu: "Integrated"},
+  { id: 9, name: "MSI Raider GE78", brand: "MSI", price: 30000000, cpu: "i9", gpu: "RTX 4090"},
+  { id: 10, name: "Acer Swift 5", brand: "Acer", price: 30000000, cpu: "i5", gpu: "Integrated"},
+  { id: 11, name: "Microsoft Surface Laptop 5", brand: "Microsoft", price: 27900000, cpu: "i7", gpu: "Integrated"},
+  { id: 12, name: "Razer Blade 16", brand: "Razer", price: 13000000, cpu: "i9", gpu: "RTX 4070"},
+  { id: 13, name: "LG Gram 17", brand: "LG", price: 27900000, cpu: "i5", gpu: "Integrated"},
+  { id: 14, name: "Samsung Galaxy Book 4 Ultra", brand: "Samsung", price: 13000000, cpu: "i9"},
+  { id: 15, name: "Asus ZenBook Duo", brand: "Asus", price: 13000000, cpu: "i7", gpu: "Integrated"},
+  { id: 16, name: "Dell Precision 7780", brand: "Dell", price: 30000000, cpu: "i9", gpu: "RTX 5000"},
+  { id: 17, name: "HP Omen 16", brand: "HP", price: 27900000, cpu: "R7", gpu: "RTX 4060"},
+  { id: 18, name: "Lenovo IdeaPad Flex 5", brand: "Lenovo", price: 13000000, cpu: "R5", gpu: "Integrated"},
+  { id: 19, name: "Apple MacBook Air M2 15\"", brand: "Apple", price: 27900000, cpu: "M2", gpu: "Integrated"},
+  { id: 20, name: "MSI Stealth 18", brand: "MSI", price: 13000000, cpu: "i7", gpu: "RTX 4080"},
+  { id: 21, name: "Acer Predator Helios 300", brand: "Acer", price: 13000000, cpu: "i7", gpu: "RTX 4070" },
+  { id: 22, name: "Microsoft Surface Pro 9", brand: "Microsoft", price: 30000000, cpu: "i5", gpu: "Integrated"},
+  { id: 23, name: "Razer Blade 14", brand: "Razer", price: 27900000, cpu: "R9", gpu: "RTX 4060"},
+  { id: 24, name: "LG Ultra PC", brand: "LG", price: 27900000, cpu: "R7", gpu: "Integrated"},
+  { id: 25, name: "Samsung Galaxy Book 3 360", brand: "Samsung", price: 27900000, cpu: "i7", gpu: "Integrated"},
+  { id: 26, name: "Asus Vivobook 15", brand: "Asus", price: 27900000, cpu: "i5", gpu: "Integrated"},
+  { id: 27, name: "Dell Latitude 5400", brand: "Dell", price: 30000000, cpu: "i5", gpu: "Integrated"},
+  { id: 28, name: "HP Pavilion Aero 13", brand: "HP", price: 27900000, cpu: "R7", gpu: "Integrated"},
+  { id: 29, name: "Lenovo ThinkBook 14", brand: "Lenovo", price: 27900000, cpu: "i7", gpu: "Integrated"},
 ];
 
 const filter = {
@@ -50,7 +49,7 @@ function updateLaptopGrid() {
     if (laptop.brand.toLowerCase() === filter.brand.toLowerCase() || filter.brand === 'all')
     {
       gridString += `
-      <div class="laptop-card"">
+      <div class="laptop-card">
 
         <div class="laptop-card-img-container"
         data-id="${laptop.id}">
@@ -62,7 +61,7 @@ function updateLaptopGrid() {
         <div class="laptop-card-info">
           <p style="font-weight: bold; margin-bottom: 4px; font-size: 20px;">${laptop.name}</p>
           <p>Đánh giá: 5 sao</p>
-          <p>Giá cả: 25.000.000 VNĐ</p>
+          <p style="font-size: 18px; margin-top: 4px; color: rgb(230, 57, 70)">Giá: ${priceFormat(laptop.price)} VNĐ</p>
         </div>
 
         <div class="laptop-card-specs">
@@ -81,7 +80,7 @@ function updateLaptopGrid() {
 
         <div class="laptop-card-features">
           <button class="compare-button">So sánh</button>
-          <button class="add-to-cart-button">Thêm vào giỏ</button>
+          <button class="add-to-cart-button" data-id="${laptop.id}">Thêm vào giỏ</button>
         </div>
       </div>
       `;
@@ -89,7 +88,6 @@ function updateLaptopGrid() {
   }); 
   
   if (gridString === '') {
-    console.log('YOOOOOOOOOO');
     gridString = `<p style="font-size: 24px;">Không có sản phẩm.</p>`;
   }
   // change the grid HTML content 
@@ -108,7 +106,7 @@ btn.addEventListener('click', () => {
   dropdownContent.classList.add('show');
 });
 
-// when click a dropdown option
+// when click one of the dropdown option
 const listButtonDropdown = document.querySelectorAll('.filter-dropdown-button');
 listButtonDropdown.forEach(btn => {
   btn.addEventListener('click', () => {
@@ -122,6 +120,7 @@ listButtonDropdown.forEach(btn => {
     filter.brand = content.toLowerCase();
     updateLaptopGrid();
     addLaptopLink();
+    addToCartEnable();
   });
 });
 
@@ -165,3 +164,88 @@ function randomImg() {
 document.querySelector('.shop-logo').addEventListener('click', () => {
   window.location.href = 'Yolo.html';
 });
+
+
+// interaction for cart button 
+function gotoCart() {
+  const cartButtonEle = document.querySelector('.cart-button');
+  cartButtonEle.addEventListener('click', () => {
+    window.location.href = 'cart.html';
+  });
+}
+gotoCart();
+
+
+// cart action
+
+// quantity of items inside the cart
+function cartQuantity() {
+  let quantity = 0;
+  Object.entries(cart).forEach(([key, value]) => {
+    quantity += value;
+  });
+  console.log(quantity);
+  return quantity;
+}
+
+function updateCartQuantity() {
+  const cartQuantityEle = document.querySelector('.cart-button');
+  cartQuantityEle.innerText = `Giỏ hàng (${cartQuantity()})`;
+}
+
+
+// receive cart from local ( initial one if didn't found anything)
+let cart = JSON.parse(localStorage.getItem("cart"));
+if (!cart) {
+  cart = {};
+}
+
+// interaction for add to cart button on each laptop card
+function addToCartEnable() {
+  const addToCartButtonList = document.querySelectorAll('.add-to-cart-button');
+  addToCartButtonList.forEach(addToCartButton => {
+    const laptopId = addToCartButton.dataset.id;
+    addToCartButton.addEventListener('click', () => {
+      if (cart[laptopId]) {
+        cart[laptopId] += 1;
+      } else {
+        cart[laptopId] = 1;
+      }
+      saveToLocal();
+      updateCartQuantity();
+    });
+  });
+}
+
+addToCartEnable();
+
+// save cart object to localStorage
+function saveToLocal() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log(JSON.parse(localStorage.getItem("cart")));
+}
+
+// reset localStorage
+function resetLocalStorage() {
+  localStorage.clear();
+}
+
+
+updateCartQuantity();
+
+
+// price format 
+function priceFormat(price) {
+  let priceStr = price.toString();
+
+  const left = priceStr.slice(0, priceStr.length-6);
+
+  const temp = priceStr.slice(-6);
+
+  const middle = temp.slice(0, 3);
+  const right = temp.slice(-3);
+
+  console.log(left, right);
+  priceStr = left + '.' + middle + '.' + right;
+  return priceStr;
+}

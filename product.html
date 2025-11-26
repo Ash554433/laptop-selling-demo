@@ -11,7 +11,7 @@
 
   <body>
   <!--This is the grand banner-->
-  <div style="background-color: rgb(109, 209, 227);"
+  <div style="background-color: rgb(109, 209, 227); display: flex; justify-content: center; align-items: center;"
     class="grand-banner">
     <p style="font-size: 32px; color: white;">Bảng quảng cáo chính</p>
   </div>
@@ -29,7 +29,7 @@
 
     <div class="navigation-bar-right">
       <div>
-        <p class="hot-line">SDT: 000000</p>
+        <p class="hot-line">SĐT: 000000</p>
       </div>
       <button class="login-button">Đăng nhập</button>
       <button class="cart-button">Giỏ hàng(0)</button>
@@ -70,7 +70,8 @@
           <p>Cân nặng: 1.2KG</p>
           <p>Màu: Lightgray</p>
           <p>Hệ điều hành: Window11</p>
-          <p style="font-size: 32px; margin: 16px 0 0 16px;">25.000.000 VNĐ </p>
+          <p style="font-size: 24px; margin-top: 16px; text-decoration: underline;" class="laptop-all-detail">Thông số chi tiết</p>
+          <p style="font-size: 28px; margin: 16px 0 0 16px; color: rgb(230, 57, 70)">25.000.000 VNĐ </p>
         </div>
         <div style="display: flex; margin-top: 24px;">
           <button class="compare-button">So sánh</button>
@@ -80,21 +81,21 @@
 
       <div style="display: flex; flex-direction: column; padding-top: 24px;">
         <div style="display: flex; flex-direction: column; margin-bottom: 24px;">
-          <p style="font-size: 24px; background-color: rgb(221, 247, 255); padding: 8px 16px;">Địa chỉ sản phẩm</p>
+          <p style="font-size: 24px; background-color: rgb(0, 119, 182); padding: 8px 16px;color:white;">Địa chỉ sản phẩm</p>
           <div style="display: flex; flex-direction: column; padding-left: 24px;">
               <p style="margin-top: 8px;">- Số 123, Hoa Lư, Ninh Bình</p> 
               <p style="margin-top: 8px;">- Số 456, Ninh Vân, Ninh Bình</p>
           </div>
         </div>
         <div style="display: flex; flex-direction: column; margin-bottom: 24px;">
-          <p style="font-size: 24px; background-color: rgb(221, 247, 255); padding: 8px 16px;">Tư vấn khách hàng</p>
+          <p style="font-size: 24px; background-color: rgb(0, 119, 182); padding: 8px 16px;color:white;">Tư vấn khách hàng</p>
           <div style="display: flex; flex-direction: column; padding-left: 24px;">
               <p style="margin-top: 8px;">- SĐT: 123456678910</p> 
               <p style="margin-top: 8px;">- Zalo: AnhPhatLap123</p>
           </div>
         </div>
         <div style="display: flex; flex-direction: column;">
-          <p style="font-size: 24px; background-color: rgb(221, 247, 255); padding: 8px 16px;">Quà tặng kèm</p>
+          <p style="font-size: 24px; background-color: rgb(0, 119, 182); padding: 8px 16px; color:white;">Quà tặng kèm</p>
           <div style="display: flex; flex-direction: column; padding-left: 24px;">
               <p style="margin-top: 8px;">- 1 chuột không dây fulhen G90 Pro</p> 
               <p style="margin-top: 8px;">- 1 balo chính hãng</p>
@@ -106,6 +107,23 @@
   
     </div>
   </div>
+
+  <!--Laptop's description--> 
+  <div class="laptop-description" style="display: flex; flex-direction: column;
+  padding: 24px;">
+    <p style="font-size: 32px; margin-bottom: 24px;">Giới thiệu về sản phẩm</p>
+    <p>Laptop Dell x67 là sản phẩm mới nhất của thương hiệu Dell đầu năm 2025 với những nâng cấp đáng kể về cả độ bền và thời lượng pin.</p>
+  </div>
+
+    <!--user comments-->
+    <div class="similar-products-area">
+      <div>
+        <p style="font-size: 32px;">Đánh giá và bình luận</p>
+      </div>
+      <div class="similar-product-list">
+      </div>
+    </div>
+
 
   <!--Similar laptops-->
   <div class="similar-products-area">
@@ -163,40 +181,37 @@
  
 
   <script>
-      // laptop db
-  const laptops = [
-  // Initial 29 Laptops
-  { id: 1, name: "Dell XPS 13 (2024)", brand: "Dell", price: 1299, cpu: "i7", gpu: "Integrated"},
-  { id: 2, name: "MacBook Air M3", brand: "Apple", price: 1099, cpu: "M3", gpu: "Integrated"},
-  { id: 3, name: "HP Spectre x360", brand: "HP", price: 1499, cpu: "i7", gpu: "Integrated"},
-  { id: 4, name: "Lenovo Legion 5", brand: "Lenovo", price: 1199, cpu: "i5", gpu: "RTX 4060"},
-  { id: 5, name: "Asus ROG Zephyrus G16", brand: "Asus", price: 1999, cpu: "R9", gpu: "RTX 4080"},
-  { id: 6, name: "Dell G15 Gaming", brand: "Dell", price: 950, cpu: "i5", gpu: "RTX 3050"},
-  { id: 7, name: "Apple MacBook Pro 14", brand: "Apple", price: 2199, cpu: "M3 Pro", gpu: "M3 Pro"},
-  { id: 8, name: "Lenovo ThinkPad X1", brand: "Lenovo", price: 1550, cpu: "i7", gpu: "Integrated"},
-  { id: 9, name: "MSI Raider GE78", brand: "MSI", price: 2499, cpu: "i9", gpu: "RTX 4090"},
-  { id: 10, name: "Acer Swift 5", brand: "Acer", price: 850, cpu: "i5", gpu: "Integrated"},
-  { id: 11, name: "Microsoft Surface Laptop 5", brand: "Microsoft", price: 1350, cpu: "i7", gpu: "Integrated"},
-  { id: 12, name: "Razer Blade 16", brand: "Razer", price: 2899, cpu: "i9", gpu: "RTX 4070"},
-  { id: 13, name: "LG Gram 17", brand: "LG", price: 1100, cpu: "i5", gpu: "Integrated"},
-  { id: 14, name: "Samsung Galaxy Book 4 Ultra", brand: "Samsung", price: 2300, cpu: "i9", gpu: "RTX 4070"},
-  { id: 15, name: "Asus ZenBook Duo", brand: "Asus", price: 1700, cpu: "i7", gpu: "Integrated"},
-  { id: 16, name: "Dell Precision 7780", brand: "Dell", price: 3500, cpu: "i9", gpu: "RTX 5000"},
-  { id: 17, name: "HP Omen 16", brand: "HP", price: 1600, cpu: "R7", gpu: "RTX 4060"},
-  { id: 18, name: "Lenovo IdeaPad Flex 5", brand: "Lenovo", price: 799, cpu: "R5", gpu: "Integrated"},
-  { id: 19, name: "Apple MacBook Air M2 15\"", brand: "Apple", price: 1199, cpu: "M2", gpu: "Integrated"},
-  { id: 20, name: "MSI Stealth 18", brand: "MSI", price: 2200, cpu: "i7", gpu: "RTX 4080"},
-  { id: 21, name: "Acer Predator Helios 300", brand: "Acer", price: 1800, cpu: "i7", gpu: "RTX 4070"},
-  { id: 22, name: "Microsoft Surface Pro 9", brand: "Microsoft", price: 1050, cpu: "i5", gpu: "Integrated"},
-  { id: 23, name: "Razer Blade 14", brand: "Razer", price: 1999, cpu: "R9", gpu: "RTX 4060"},
-  { id: 24, name: "LG Ultra PC", brand: "LG", price: 900, cpu: "R7", gpu: "Integrated"},
-  { id: 25, name: "Samsung Galaxy Book 3 360", brand: "Samsung", price: 1450, cpu: "i7", gpu: "Integrated"},
-  { id: 26, name: "Asus Vivobook 15", brand: "Asus", price: 650, cpu: "i5", gpu: "Integrated"},
-  { id: 27, name: "Dell Latitude 5400", brand: "Dell", price: 980, cpu: "i5", gpu: "Integrated"},
-  { id: 28, name: "HP Pavilion Aero 13", brand: "HP", price: 999, cpu: "R7", gpu: "Integrated"},
-  { id: 29, name: "Lenovo ThinkBook 14", brand: "Lenovo", price: 1150, cpu: "i7", gpu: "Integrated"},
-];
-    
+    const laptops = [
+      { id: 1, name: "Dell XPS 13 (2024)", brand: "Dell", price: 12000000, cpu: "i7", gpu: "Integrated" },
+      { id: 2, name: "MacBook Air M3", brand: "Apple", price: 13000000, cpu: "M3", gpu: "Integrated"},
+      { id: 3, name: "HP Spectre x360", brand: "HP", price: 12000000, cpu: "i7", gpu: "Integrated"},
+      { id: 4, name: "Lenovo Legion 5", brand: "Lenovo", price: 12000000, cpu: "i5", gpu: "RTX 4060"},
+      { id: 5, name: "Asus ROG Zephyrus G16", brand: "Asus", price: 30000000, cpu: "R9", gpu: "RTX 4080"},
+      { id: 6, name: "Dell G15 Gaming", brand: "Dell", price: 30000000, cpu: "i5", gpu: "RTX 3050"},
+      { id: 7, name: "Apple MacBook Pro 14", brand: "Apple", price: 13000000, cpu: "M3 Pro", gpu: "M3 Pro"},
+      { id: 8, name: "Lenovo ThinkPad X1", brand: "Lenovo", price: 13000000, cpu: "i7", gpu: "Integrated"},
+      { id: 9, name: "MSI Raider GE78", brand: "MSI", price: 30000000, cpu: "i9", gpu: "RTX 4090"},
+      { id: 10, name: "Acer Swift 5", brand: "Acer", price: 30000000, cpu: "i5", gpu: "Integrated"},
+      { id: 11, name: "Microsoft Surface Laptop 5", brand: "Microsoft", price: 27900000, cpu: "i7", gpu: "Integrated"},
+      { id: 12, name: "Razer Blade 16", brand: "Razer", price: 13000000, cpu: "i9", gpu: "RTX 4070"},
+      { id: 13, name: "LG Gram 17", brand: "LG", price: 27900000, cpu: "i5", gpu: "Integrated"},
+      { id: 14, name: "Samsung Galaxy Book 4 Ultra", brand: "Samsung", price: 13000000, cpu: "i9"},
+      { id: 15, name: "Asus ZenBook Duo", brand: "Asus", price: 13000000, cpu: "i7", gpu: "Integrated"},
+      { id: 16, name: "Dell Precision 7780", brand: "Dell", price: 30000000, cpu: "i9", gpu: "RTX 5000"},
+      { id: 17, name: "HP Omen 16", brand: "HP", price: 27900000, cpu: "R7", gpu: "RTX 4060"},
+      { id: 18, name: "Lenovo IdeaPad Flex 5", brand: "Lenovo", price: 13000000, cpu: "R5", gpu: "Integrated"},
+      { id: 19, name: "Apple MacBook Air M2 15\"", brand: "Apple", price: 27900000, cpu: "M2", gpu: "Integrated"},
+      { id: 20, name: "MSI Stealth 18", brand: "MSI", price: 13000000, cpu: "i7", gpu: "RTX 4080"},
+      { id: 21, name: "Acer Predator Helios 300", brand: "Acer", price: 13000000, cpu: "i7", gpu: "RTX 4070" },
+      { id: 22, name: "Microsoft Surface Pro 9", brand: "Microsoft", price: 30000000, cpu: "i5", gpu: "Integrated"},
+      { id: 23, name: "Razer Blade 14", brand: "Razer", price: 27900000, cpu: "R9", gpu: "RTX 4060"},
+      { id: 24, name: "LG Ultra PC", brand: "LG", price: 27900000, cpu: "R7", gpu: "Integrated"},
+      { id: 25, name: "Samsung Galaxy Book 3 360", brand: "Samsung", price: 27900000, cpu: "i7", gpu: "Integrated"},
+      { id: 26, name: "Asus Vivobook 15", brand: "Asus", price: 27900000, cpu: "i5", gpu: "Integrated"},
+      { id: 27, name: "Dell Latitude 5400", brand: "Dell", price: 30000000, cpu: "i5", gpu: "Integrated"},
+      { id: 28, name: "HP Pavilion Aero 13", brand: "HP", price: 27900000, cpu: "R7", gpu: "Integrated"},
+      { id: 29, name: "Lenovo ThinkBook 14", brand: "Lenovo", price: 27900000, cpu: "i7", gpu: "Integrated"},
+    ];
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const receivedID = urlParams.get('id');
@@ -235,6 +250,63 @@
     document.querySelector('.shop-logo').addEventListener('click', () => {
       window.location.href = 'Yolo.html';
     });
+
+    // interaction for cart button 
+    function cartAction() {
+      const cartButtonEle = document.querySelector('.cart-button');
+      cartButtonEle.addEventListener('click', () => {
+        window.location.href = 'cart.html';
+      });
+    }
+    cartAction();
+
+    // receive cart from local (initiate one if didn't found anything)
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (!cart) {
+      cart = {};
+    }
+
+    // save cart object to localStorage
+    function saveToLocal() {
+      localStorage.setItem("cart", JSON.stringify(cart));
+      console.log(JSON.parse(localStorage.getItem("cart")));
+    }
+
+
+    function addToCartEnable() {
+    const addToCartButtonList = document.querySelectorAll('.add-to-cart-button');
+    addToCartButtonList.forEach(addToCartButton => {
+      addToCartButton.addEventListener('click', () => {
+        if (cart[receivedID]) {
+          cart[receivedID] += 1;
+        } else {
+          cart[receivedID] = 1;
+        }
+        saveToLocal();
+        updateCartQuantity();
+      });
+    });
+    }
+
+    addToCartEnable();
+
+
+    // quantity of items inside the cart
+    function cartQuantity() {
+      let quantity = 0;
+      Object.entries(cart).forEach(([key, value]) => {
+        quantity += value;
+      });
+      console.log(quantity);
+      return quantity;
+    }
+
+    function updateCartQuantity() {
+      const cartQuantityEle = document.querySelector('.cart-button');
+      cartQuantityEle.innerText = `Giỏ hàng (${cartQuantity()})`;
+    }
+    updateCartQuantity();
+
     </script>
   </body>
 </html>
